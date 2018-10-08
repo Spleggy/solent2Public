@@ -10,3 +10,5 @@
 *.class
 *.jar
 /week1/maven-test-exercise/MD/target/
+*.iml
+/.idea/
