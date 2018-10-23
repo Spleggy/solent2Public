@@ -4,8 +4,24 @@
     Author     : cgallen
 --%>
 
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="solent.ac.uk.ood.examples.hotellock.roomlock.HotelRoomLockServiceImpl"%>
+<%@page import="solent.ac.uk.ood.examples.hotellock.model.HotelRoomLockService"%>
 <!DOCTYPE html>
+<%
+    HotelRoomLockService hotelRoomLockService = (HotelRoomLockService) session.getAttribute("hotelReceptionService");
+
+    String roomNumber = request.getParameter("roomNumber");
+    String cardCode = request.getParameter("codedCard");
+
+
+
+%>
+
+
+
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
